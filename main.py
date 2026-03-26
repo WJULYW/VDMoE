@@ -31,7 +31,7 @@ batch_size = args.batchsize
 learning_rate = args.lr
 max_iter = args.max_iter
 
-root_dir = r'/remote-home/hao.lu/jywang/Data/Multi_Fatigue_Cognitive_Processed_old/train'
+root_dir = r''
 num_frames_per_sample = args.num_frames_per_sample
 stride = args.stride
 
@@ -39,7 +39,7 @@ dataset = VideoDataset(root_dir, num_frames_per_sample, stride)
 
 dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
-test_dir = r'/remote-home/hao.lu/jywang/Data/Multi_Fatigue_Cognitive_Processed_old/test'
+test_dir = r''
 test_dataset = VideoDataset(test_dir, num_frames_per_sample, stride)
 test_dataloader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
